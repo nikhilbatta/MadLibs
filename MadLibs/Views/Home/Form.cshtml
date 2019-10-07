@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>!PlayMadLibs</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Madlib Way!</h1>
+    <form  name = "Form1" method="post">
+     
+    <p>Enter in words to create a madlib, 
+    <label for="verb"> Enter in Verb <label>
+     <input id="verb" name="verb" type="text">
+     <label for="adjective"> Enter in Adjective <label>
+     <input id="adjective" name="adjective" type="text">
+     <label for="verb2"> Enter in Verb <label>
+     <input id="verb2" name="verb2" type="text">
+     <label for="adjective2"> Enter in adjective <label>
+     <input id="adjective2" name="adjective2" type="text">
+     <label for="verb3"> Enter in Verb <label>
+     <input id="verb3" name="verb3" type="text">
+     <label for="noun"> Enter in Noun <label>
+     <input id="noun" name="noun" type="text">
+     <label for="nountwo"> Enter in Noun <label>
+     <input id="nountwo" name="nountwo" type="text">
+     </p>
+
+     <input type= "button" value = "buttonOne" name = "buttonOne" onclick = "return OnButton1();">
+     <input type = "button" value = "buttontwo" name = "buttonTwo" onclick = "return OnButton2();">
+      </form>
+     <script language = "Javascript">
+           
+  function OnButton1()
+{
+    document.Form1.action = "/madlib"
+    document.Form1.target = "_blank";    // Open in a new window
+    document.Form1.submit();             // Submit the page
+    return true;
+}
+
+function OnButton2()
+{
+    document.Form1.action = "/celebrity"
+    document.Form1.target = "_blank";    // Open in a new window
+    document.Form1.submit();             // Submit the page
+    return true;
+}
+    </script>
+  </body>
+</html>
